@@ -48,40 +48,34 @@ YouTubeMealTags dataset은 음식점에서 식사를 하는 이미지와 이와 
 
 ```xml
 <object>
-<name>person</name>
-<pose>unspecified</pose>
-<truncated>0</truncated>
-<difficult>0</difficult>
-<bndbox>
-<xmin>838</xmin>
-<ymin>714</ymin>
-<xmax>2081</xmax>
-<ymax>2077</ymax>
-</bndbox>
-<attributes>
-<person>
-<action>먹는 중</action>
-</person>
-</attributes>
+ <name>person</name>
+ <bndbox>
+  <xmin>838</xmin>
+  <ymin>714</ymin>
+  <xmax>2081</xmax>
+  <ymax>2077</ymax>
+ </bndbox>
+ <attributes>
+  <person>
+   <action>먹는 중</action>
+  </person>
+ </attributes>
 </object>
 <object>
-<name>food</name>
-<pose>unspecified</pose>
-<truncated>0</truncated>
-<difficult>0</difficult>
-<bndbox>
-<xmin>1304</xmin>
-<ymin>215</ymin>
-<xmax>1435</xmax>
-<ymax>346</ymax>
-</bndbox>
-<attributes>
-<food>
-<category/>
-<name>케챱</name>
-<quantity>30</quantity>
-</food>
-</attributes>
+ <name>food</name>
+ <bndbox>
+  <xmin>1304</xmin>
+  <ymin>215</ymin>
+  <xmax>1435</xmax>
+  <ymax>346</ymax>
+ </bndbox>
+ <attributes>
+  <food>
+   <category/>
+   <name>케챱</name>
+   <quantity>30</quantity>
+  </food>
+ </attributes>
 </object>
 ```
 
