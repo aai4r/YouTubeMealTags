@@ -19,7 +19,6 @@ YouTubeMealTags dataset은 음식점에서 식사를 하는 이미지와 이와 
 - 객체의 종류와 위치 (e.g., person, dish, cup, food, drink)
 - 음식의 종류와 남은 양 (e.g., 치킨, 콜라)
 - 필요한 서비스 (e.g., 휴지 제공, 쓰레기 치우기, 접시 치우기)
-- 관련 사람의 행동 (e.g., 먹는 중, 이야기 중)
 
 ## Dataset Description
 데이터셋은 음식점에서 식사를 하는 이미지를 포함하고 있으며 크게 다음과 같이 구성되어있습니다.
@@ -48,20 +47,6 @@ YouTubeMealTags dataset은 음식점에서 식사를 하는 이미지와 이와 
 
 ```xml
 <object>
- <name>person</name>
- <bndbox>
-  <xmin>838</xmin>
-  <ymin>714</ymin>
-  <xmax>2081</xmax>
-  <ymax>2077</ymax>
- </bndbox>
- <attributes>
-  <person>
-   <action>먹는 중</action>
-  </person>
- </attributes>
-</object>
-<object>
  <name>food</name>
  <bndbox>
   <xmin>1304</xmin>
@@ -76,6 +61,18 @@ YouTubeMealTags dataset은 음식점에서 식사를 하는 이미지와 이와 
    <quantity>30</quantity>
   </food>
  </attributes>
+</object>
+<object>
+ <name>dish</name>
+ <pose>unspecified</pose>
+ <truncated>0</truncated>
+ <difficult>0</difficult>
+ <bndbox>
+  <xmin>2249</xmin>
+  <ymin>205</ymin>
+  <xmax>2547</xmax>
+  <ymax>494</ymax>
+ </bndbox>
 </object>
 ```
 
